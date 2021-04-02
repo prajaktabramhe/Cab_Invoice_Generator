@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="InvoiceServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-02T07:02:02" hostname="DESKTOP-0QBG6NF" time="0.043">
+<testsuite name="InvoiceServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-02T15:23:52" hostname="DESKTOP-0QBG6NF" time="0.033">
   <properties/>
-  <testcase name="givenMultipleRides_shouldReturnTotalFare()" classname="InvoiceServiceTest" time="0.043">
+  <testcase name="givenUsersID_GenerateTotalFare_ShouldReturnInvoiceSummary()" classname="InvoiceServiceTest" time="0.033">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at InvoiceServiceTest.givenMultipleRides_shouldReturnTotalFare(InvoiceServiceTest.java:40)
+	at InvoiceServiceTest.givenUsersID_GenerateTotalFare_ShouldReturnInvoiceSummary(InvoiceServiceTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

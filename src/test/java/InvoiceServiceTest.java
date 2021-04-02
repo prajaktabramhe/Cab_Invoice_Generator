@@ -42,6 +42,20 @@ public class InvoiceServiceTest
         InvoiceSummary summary = invoiceGenerator.calculateFare(rides);
         InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 30.0);
         Assertions.assertEquals(expectedInvoiceSummary, summary);
+    }
 
+    @Test
+    public void givenUsersID_GenerateTotalFare_ShouldReturnInvoiceSummary()
+    {
+        Ride[] rides = {
+                new Ride(0.50 , 0),
+                new Ride(5 , 10)
+
+        };
+        invoiceGenerator.addRides("UserID_1", rides);
+        InvoiceSummary summary = invoiceGenerator.calculateFare("UserID_1");
+        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 65);
+        Assertions.assertEquals(expectedInvoiceSummary, summary);
     }
 }
+

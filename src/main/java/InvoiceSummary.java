@@ -1,7 +1,9 @@
+import java.util.Objects;
+
 public class InvoiceSummary {
     private final int numberOfRides;
     private final double totalFare;
-    private final double averageFare;
+    public final double averageFare;
 
     public InvoiceSummary(int numberOfRides, double totalFare)
     {
@@ -17,5 +19,11 @@ public class InvoiceSummary {
         if (o == null || getClass() != o.getClass()) return false;
         InvoiceSummary that = (InvoiceSummary) o;
         return  numberOfRides == that.numberOfRides && Double.compare(that.totalFare, totalFare) == 0 && Double.compare(that.averageFare, averageFare) == 0;
+    }
+
+    @Override
+    public int hashCode()
+    {
+        return Objects.hash(numberOfRides, totalFare, averageFare);
     }
 }
