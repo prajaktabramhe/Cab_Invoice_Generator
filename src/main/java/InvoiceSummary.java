@@ -1,6 +1,7 @@
 import java.util.Objects;
 
-public class InvoiceSummary {
+public class InvoiceSummary
+{
     private final int numberOfRides;
     private final double totalFare;
     public final double averageFare;

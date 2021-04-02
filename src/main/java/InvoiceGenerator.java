@@ -5,10 +5,12 @@ public class InvoiceGenerator
     private static  double MINIMUM_FARE = 5;
     RideRepository  rideRepository;
 
-    public InvoiceGenerator() {
+    public InvoiceGenerator()
+    {
         this.rideRepository = new RideRepository();
     }
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         System.out.println("Welcome To Cab Invoice Generator");
     }
 
@@ -27,14 +29,17 @@ public class InvoiceGenerator
         }
         return new InvoiceSummary(rides.length, totalFare);
     }
-    private InvoiceSummary calculateFare3(Ride[] rideList) {
+    private InvoiceSummary calculateFare3(Ride[] rideList)
+    {
         double totalTravelFareInRS = 0;
-        for (Ride rides : rideList) {
+        for (Ride rides : rideList)
+        {
             totalTravelFareInRS = totalTravelFareInRS + getTravelFare(rides.rideType, rides.distance, rides.time);
         }
         return new InvoiceSummary(rideList.length, totalTravelFareInRS);
     }
-    public double getTravelFare(RideType rideType, double distance, double time) {
+    public double getTravelFare(RideType rideType, double distance, double time)
+    {
         setValue(rideType);
         double totalTravelFareInRS = distance * MINIMUM_COST_PER_KILOMETER + time * COST_PER_TIME;
         return Math.max(totalTravelFareInRS, MINIMUM_FARE);

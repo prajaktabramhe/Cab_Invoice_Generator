@@ -9,7 +9,8 @@ public enum  RideType
     public double minimumTravelFareInRs;
 
     //CONSTRUCTOR
-    RideType(double costPerKilometerInRs, double costPerMinuteInRs, double minimumTravelFareInRs) {
+    RideType(double costPerKilometerInRs, double costPerMinuteInRs, double minimumTravelFareInRs)
+    {
         this.costPerKilometerInRs = costPerKilometerInRs;
         this.costPerMinuteInRs = costPerMinuteInRs;
         this.minimumTravelFareInRs = minimumTravelFareInRs;
