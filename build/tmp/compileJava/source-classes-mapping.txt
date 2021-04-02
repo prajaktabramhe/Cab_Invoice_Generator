@@ -1,8 +1,12 @@
+InvoiceSummary.java
+ InvoiceSummary
+InvoiceGeneratorException.java
+ InvoiceGeneratorException
+RideType.java
+ RideType
 Ride.java
  Ride
 RideRepository.java
  RideRepository
-InvoiceSummary.java
- InvoiceSummary
 InvoiceGenerator.java
  InvoiceGenerator
