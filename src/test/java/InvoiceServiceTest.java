@@ -82,7 +82,8 @@ public class InvoiceServiceTest
     }
 
     @Test
-    public void givenDistanceAndTimeWithPremiumRideType_GenerateTotalFare_ShouldReturnTheTotalTravelFare() {
+    public void givenDistanceAndTimeWithPremiumRideType_GenerateTotalFare_ShouldReturnTheTotalTravelFare()
+    {
         Ride[] rides = {
                        new Ride(50, 12.5, RideType.PREMIUM)
                         };
@@ -100,8 +101,10 @@ public class InvoiceServiceTest
     }
 
     @Test
-    public void givenUserIdAsNull_ShouldThrowCustomException() {
-        try {
+    public void givenUserIdAsNull_ShouldThrowCustomException()
+    {
+        try
+        {
             Ride[] rides = {
                             new Ride(50, 12.5, RideType.PREMIUM)
                            };
